@@ -15,6 +15,20 @@ def home():
 def about(): 
    return render_template('about.html')
 
+
+@app.route('/good')
+def good(): 
+   return render_template('good.html')
+
+@app.route('/bad')
+def bad(): 
+   return render_template('bad.html')
+
+@app.route('/normal')
+def normal(): 
+   return render_template('normal.html')
+
+
 # Load the pomelo detection model
 model = load_model('pomelo.h5', compile=True)
 
