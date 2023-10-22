@@ -16,17 +16,17 @@ def about():
    return render_template('about.html')
 
 
-@app.route('/good')
-def good(): 
-   return render_template('good.html')
+# @app.route('/good')
+# def good(): 
+#    return render_template('good.html')
 
-@app.route('/bad')
-def bad(): 
-   return render_template('bad.html')
+# @app.route('/bad')
+# def bad(): 
+#    return render_template('bad.html')
 
-@app.route('/normal')
-def normal(): 
-   return render_template('normal.html')
+# @app.route('/normal')
+# def normal(): 
+#    return render_template('normal.html')
 
 
 # Load the pomelo detection model
@@ -34,7 +34,7 @@ model = load_model('pomelo.h5', compile=True)
 
 # Define a function to preprocess the image
 def preprocess_image(image_path):
-    img = image.load_img(image_path, target_size=(48, 48), grayscale=True)
+    img = image.load_img(image_path, target_size=(224, 224))  # Resize to (224, 224)
     img = image.img_to_array(img)
     img = img / 255.0
     img = np.expand_dims(img, axis=0)
