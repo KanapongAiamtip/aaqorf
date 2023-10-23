@@ -2,9 +2,8 @@
 aaqorf  is a web application assessment and analysis of the quality of pomelo fruits
 
 ## language of development. :balloon: :balloon: :balloon:
-- [Python](https://www.python.org)
+- [Python](https://www.python.org) for building our frontend HTML application
 - [HTML](https://html.com) for creating frontend application.
-- [JavaScript](https://www.javascript.com) for building our frontend HTML application
 - [Bootstrap](https://getbootstrap.com) for styling our application.
 - [SCSS](https://sass-lang.com/)  for styling our application.
 
