@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, jsonify  # เพิ่ม js
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import numpy as np
-import os
 import cv2
 
 app = Flask(__name__)
