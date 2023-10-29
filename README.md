@@ -32,6 +32,7 @@ First, check the required versions.
   - pip install opencv-python
   - pip install tensorflow
   - pip install Flask
+  - pip install Pillow
  - Running
   ```
   python app.py
